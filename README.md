@@ -18,7 +18,7 @@ remplacer les chemins `../assets/` par `assets/` et `../mentions-legales.html` p
 
 ## À compléter
 - Photos : versions sous licence, sans filigrane « Unsplash+ » (mêmes noms de fichiers dans `assets/img/`)
-- Forme juridique, numéros BCE, TVA et ITAA dans `mentions-legales.html`
+- Forme juridique et numéro ITAA (BCE 1021.333.388 ajouté) dans `mentions-legales.html`
 - Formulaire : ouvre la messagerie (mailto). Pour un envoi direct, brancher Formspree ou équivalent.
 
 ## Aperçu local
