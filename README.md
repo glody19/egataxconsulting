@@ -1,28 +1,27 @@
 # Ega Tax Consulting — site web
 
-Site vitrine de la fiduciaire **Ega Tax Consulting** (comptabilité, fiscalité, TVA, création d'entreprise — Belgique).
+Site vitrine de la fiduciaire **Ega Tax Consulting** (Excelsiorlaan 71, 1930 Zaventem).
+100 % statique (HTML / CSS / JS natif), sans étape de build. Déployé sur Vercel à chaque push sur `main`.
 
-100 % statique (HTML / CSS / JS natif), aucune dépendance, aucune étape de build.
+## Deux propositions
+| Page | Style |
+|---|---|
+| `/` | Page de choix entre les deux versions |
+| `/version-a/` | **Classique** : titres à empattements (Cormorant Garamond), filets fins, esprit cabinet traditionnel |
+| `/version-b/` | **Moderne épurée** : typographie Manrope, grandes photos, cartes arrondies |
 
-## Structure
-```
-index.html              Page principale (services, mission, profils, méthode, FAQ, contact)
-mentions-legales.html   Mentions légales & cookies (champs à compléter)
-assets/styles.css       Design system & styles
-assets/main.js          Interactions (onglets, profils, animations, formulaire)
-assets/favicon.svg      Logo / favicon
-```
+Les deux versions partagent le même contenu, les photos (`assets/img/`), le script (`assets/common.js`) et `mentions-legales.html`.
+
+## Une fois la version choisie
+Déplacer `version-x/index.html` et `version-x/style.css` à la racine (à la place de la page de choix),
+remplacer les chemins `../assets/` par `assets/` et `../mentions-legales.html` par `mentions-legales.html`, puis supprimer l'autre dossier.
+
+## À compléter
+- Photos : versions sous licence, sans filigrane « Unsplash+ » (mêmes noms de fichiers dans `assets/img/`)
+- Forme juridique, numéros BCE, TVA et ITAA dans `mentions-legales.html`
+- Formulaire : ouvre la messagerie (mailto). Pour un envoi direct, brancher Formspree ou équivalent.
 
 ## Aperçu local
 ```bash
 python3 -m http.server 8000   # puis http://localhost:8000
 ```
-
-## Mise en ligne
-- **GitHub Pages** : Settings → Pages → Branch `main` / root.
-- **Vercel / Netlify** : importer le dépôt, aucun réglage nécessaire.
-- Domaine personnalisé (ex. `egataxconsulting.be`) : ajouter un fichier `CNAME` et configurer le DNS.
-
-## À compléter
-- Forme juridique, numéros BCE, TVA et ITAA dans `mentions-legales.html`
-- Formulaire : ouvre actuellement la messagerie (mailto). Pour un envoi direct, brancher Formspree, Netlify Forms ou un CRM.
