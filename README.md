@@ -24,6 +24,5 @@ python3 -m http.server 8000   # puis http://localhost:8000
 - Domaine personnalisé (ex. `egataxconsulting.be`) : ajouter un fichier `CNAME` et configurer le DNS.
 
 ## À compléter
-- Numéro de téléphone et adresse du bureau (absents / factices sur l'ancien site)
-- Numéros BCE, TVA et ITAA dans `mentions-legales.html`
+- Forme juridique, numéros BCE, TVA et ITAA dans `mentions-legales.html`
 - Formulaire : ouvre actuellement la messagerie (mailto). Pour un envoi direct, brancher Formspree, Netlify Forms ou un CRM.
