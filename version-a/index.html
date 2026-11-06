@@ -30,14 +30,14 @@
   <header class="header" data-header>
     <div class="wrap header__inner">
       <a href="#accueil" class="logo">
-        <span class="logo__name">Ega Tax Consulting</span>
-        <span class="logo__tag">Expertise · Conseil · Comptabilité</span>
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 60 60"><rect x="4" y="34" width="14" height="22" fill="#5DCAA5"/><rect x="23" y="22" width="14" height="34" fill="#1D9E75"/><rect x="42" y="8" width="14" height="48" fill="#0F6E56"/></svg></span>
+        <span class="logo__text"><span class="logo__name">Ega Tax Consulting</span>
+        <span class="logo__tag">Expertise · Conseil · Comptabilité</span></span>
       </a>
       <nav class="nav" data-menu aria-label="Navigation principale">
         <a href="#accueil">Accueil</a>
         <a href="#services">Nos services</a>
         <a href="#mission">Notre mission</a>
-        <a href="#contact">Nous contacter</a>
         <a href="#contact" class="btn btn--outline nav__btn">Prendre rendez-vous</a>
       </nav>
       <button class="burger" data-burger aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -47,20 +47,18 @@
   <main>
     <!-- Accueil -->
     <section class="hero" id="accueil">
-      <div class="wrap hero__grid">
-        <div class="hero__text fade">
-          <p class="overline">Fiduciaire à Zaventem</p>
-          <h1>Comptabilité, fiscalité et création d'entreprise.</h1>
-          <p class="lead">Un accompagnement complet, élégant et structuré pour les indépendants, sociétés, PME, professions libérales, ASBL, starters et investisseurs immobiliers.</p>
-          <div class="hero__actions">
-            <a href="#contact" class="btn btn--solid">Nous contacter</a>
-            <a href="#services" class="btn btn--link">Découvrir nos services →</a>
-          </div>
+      <div class="hero__bg" aria-hidden="true"><img src="../assets/img/hero-immeuble-a.jpg" alt="" width="2400" height="1600" fetchpriority="high"></div>
+      <div class="wrap hero__content">
+        <p class="overline overline--light hero__in" style="--d:.1s">Expertise fiscale et comptable · Zaventem</p>
+        <h1 class="hero__in" style="--d:.25s">Comptabilité, fiscalité<br>et création d'entreprise.</h1>
+        <span class="hero__rule hero__in" style="--d:.4s" aria-hidden="true"></span>
+        <p class="lead hero__in" style="--d:.5s">Un accompagnement complet, élégant et structuré pour les indépendants, sociétés, PME, professions libérales, ASBL, starters et investisseurs immobiliers.</p>
+        <div class="hero__actions hero__in" style="--d:.65s">
+          <a href="#contact" class="btn btn--light">Prendre rendez-vous</a>
+          <a href="#services" class="btn btn--ghost">Découvrir nos services</a>
         </div>
-        <figure class="hero__img fade">
-          <img src="../assets/img/equipe-documents.jpg" alt="Un conseiller Ega Tax Consulting échange avec un client" width="1600" height="1067" fetchpriority="high">
-        </figure>
       </div>
+      <a href="#services" class="hero__scroll" aria-label="Défiler vers nos services"><span></span></a>
     </section>
 
     <section class="audience">
@@ -78,8 +76,8 @@
           <span class="rule" aria-hidden="true"></span>
         </header>
         <div class="services">
-          <article class="service fade">
-            <figure><img src="../assets/img/reunion-chiffres.jpg" alt="Réunion de travail autour de documents comptables" width="1600" height="1092" loading="lazy"></figure>
+          <article class="service fade" style="--d:.0s">
+            <figure><img src="../assets/img/analyse-ordinateur.jpg" alt="Deux conseillers analysent une comptabilité sur ordinateur" width="1600" height="1066" loading="lazy"></figure>
             <h3>Comptabilité</h3>
             <p>Une comptabilité rigoureuse et tenue à jour, qui vous aide à piloter votre activité.</p>
             <ul>
@@ -92,8 +90,8 @@
               <li>Supervision et validation</li>
             </ul>
           </article>
-          <article class="service fade">
-            <figure><img src="../assets/img/reunion-analyse.jpg" alt="Conseillers étudiant un dossier fiscal" width="1600" height="1600" loading="lazy"></figure>
+          <article class="service fade" style="--d:.15s">
+            <figure><img src="../assets/img/reunion-dossier.jpg" alt="Conseillère étudiant un dossier fiscal en réunion" width="1600" height="1067" loading="lazy"></figure>
             <h3>Fiscalité</h3>
             <p>Payer le juste impôt, anticiper vos obligations et être accompagné face à l'administration.</p>
             <ul>
@@ -107,8 +105,8 @@
               <li>Donations et successions</li>
             </ul>
           </article>
-          <article class="service fade">
-            <figure><img src="../assets/img/poignee-de-main.jpg" alt="Poignée de main avec un entrepreneur" width="1600" height="1067" loading="lazy"></figure>
+          <article class="service fade" style="--d:.3s">
+            <figure><img src="../assets/img/echange-documents.jpg" alt="Échange autour du dossier d'un entrepreneur" width="1600" height="1066" loading="lazy"></figure>
             <h3>Création et conseil d'entreprise</h3>
             <p>De l'idée au lancement, puis à chaque étape importante de la vie de votre entreprise.</p>
             <ul>
@@ -138,7 +136,7 @@
     <section class="section" id="mission">
       <div class="wrap mission">
         <figure class="mission__img fade">
-          <img src="../assets/img/hero-conseiller.jpg" alt="Conseiller Ega Tax Consulting" width="1312" height="1600" loading="lazy">
+          <img src="../assets/img/rendez-vous-client.jpg" alt="Rendez-vous chaleureux avec un client au bureau" width="1600" height="1066" loading="lazy">
         </figure>
         <div class="mission__text fade">
           <p class="overline">Notre mission</p>
