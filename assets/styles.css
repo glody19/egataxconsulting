@@ -378,3 +378,57 @@ p { margin: 0; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Photos ---------- */
+.hero__photo { margin: 0; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 4.6; box-shadow: var(--shadow-lg); position: relative; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 20%; }
+.hero__photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(200deg, transparent 55%, rgba(10,31,61,.35)); }
+.hero__visual { max-width: 500px; justify-self: end; width: 100%; }
+.mini-dash { position: absolute; left: -48px; bottom: 36px; width: 250px; background: var(--ink); color: #fff; border-radius: 18px; padding: 16px 18px 12px; box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,.08); }
+.mini-dash__top { display: flex; justify-content: space-between; align-items: center; }
+.mini-dash small { font-size: 12px; color: rgba(255,255,255,.6); }
+.mini-dash strong { display: block; font-family: var(--serif); font-size: 28px; font-weight: 500; margin: 6px 0 0; font-variant-numeric: tabular-nums; }
+.mini-dash strong::after { content: " €"; font-size: 16px; color: rgba(255,255,255,.5); }
+.mini-dash em { font-style: normal; font-size: 12px; font-weight: 600; }
+.mini-dash svg { width: 100%; height: 54px; margin-top: 8px; }
+.mini-dash .line { stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 2.2s .4s var(--ease) forwards; }
+.mini-dash .area { opacity: 0; animation: fade 1s 1.4s forwards; }
+.hero__visual .float--a { left: auto; right: -36px; bottom: auto; top: 46%; }
+.hero__visual .float--b { right: auto; left: -36px; top: 40px; animation-delay: -3s; }
+
+.panel__img { position: relative; margin: -32px -32px 52px; aspect-ratio: 16 / 10; overflow: visible; }
+.panel__img img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--r-lg) var(--r-lg) 0 0; }
+.panel__img .panel__icon { position: absolute; left: 32px; bottom: -27px; margin: 0; box-shadow: 0 0 0 5px var(--cream); }
+
+.mission__intro { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-bottom: 56px; }
+.mission__intro .section__head { margin: 0; }
+.mission__intro .section__sub + .section__sub { margin-top: 12px; }
+.mission__photo { margin: 0; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 3; border: 1px solid rgba(255,255,255,.1); }
+.mission__photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.banner { position: relative; margin: 56px 0 0; border-radius: var(--r-lg); overflow: hidden; min-height: 380px; display: grid; }
+.banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.banner::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,31,61,.92) 0%, rgba(10,31,61,.7) 45%, rgba(10,31,61,.1) 100%); z-index: 1; }
+.banner figcaption { position: relative; z-index: 2; align-self: center; padding: 48px; max-width: 560px; color: #fff; }
+.banner__quote { font-family: var(--serif); font-size: clamp(24px, 3vw, 34px); line-height: 1.25; margin-bottom: 28px; }
+
+@media (max-width: 1080px) {
+  .hero__visual { justify-self: center; }
+  .mission__intro { grid-template-columns: 1fr; gap: 36px; }
+}
+@media (max-width: 720px) {
+  .mini-dash { left: -6px; bottom: -30px; width: 210px; }
+  .mini-dash strong { font-size: 22px; }
+  .hero__visual .float--a { right: -6px; top: 52%; }
+  .hero__visual .float--b { left: -6px; top: 16px; }
+  .panel__img { margin: -32px -32px 48px; }
+  .banner figcaption { padding: 32px 24px; }
+  .banner::before { background: linear-gradient(180deg, rgba(10,31,61,.55), rgba(10,31,61,.92)); }
+}
+@media (max-width: 720px) {
+  .hero__visual .float { display: none; }
+  .mini-dash { left: 12px; bottom: -36px; width: 190px; padding: 12px 14px 8px; }
+  .mini-dash .tag { display: none; }
+  .mini-dash svg { height: 40px; }
+  .hero__photo { aspect-ratio: 4 / 4.4; }
+}

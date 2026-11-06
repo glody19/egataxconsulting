@@ -9,6 +9,7 @@
   <meta property="og:title" content="Ega Tax Consulting — Vos chiffres, enfin clairs.">
   <meta property="og:description" content="Comptabilité, fiscalité et création d'entreprise. Un accompagnement clair, réactif et sur mesure.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero-conseiller.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,35 +90,21 @@
           </ul>
         </div>
 
-        <div class="hero__visual reveal" aria-label="Illustration de l'espace client">
-          <div class="dash">
-            <div class="dash__head">
-              <div class="dash__dots"><i></i><i></i><i></i></div>
-              <span>Votre tableau de bord</span>
-              <span class="tag">Illustration</span>
-            </div>
-            <div class="dash__kpis">
-              <div class="kpi"><small>Chiffre d'affaires</small><strong data-count="184250">0</strong><em class="up">+12,4 %</em></div>
-              <div class="kpi"><small>Trésorerie</small><strong data-count="46890">0</strong><em class="up">+5,1 %</em></div>
-            </div>
-            <div class="dash__chart">
-              <svg viewBox="0 0 320 120" preserveAspectRatio="none" aria-hidden="true">
-                <defs>
-                  <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5AAEEA" stop-opacity=".35"/><stop offset="1" stop-color="#5AAEEA" stop-opacity="0"/></linearGradient>
-                </defs>
-                <path class="area" d="M0,95 C30,90 50,70 80,72 C110,74 125,55 160,50 C195,45 210,60 240,38 C270,18 295,22 320,12 L320,120 L0,120Z" fill="url(#g1)"/>
-                <path class="line" d="M0,95 C30,90 50,70 80,72 C110,74 125,55 160,50 C195,45 210,60 240,38 C270,18 295,22 320,12" fill="none" stroke="#5AAEEA" stroke-width="2.5"/>
-              </svg>
-              <div class="dash__months"><span>Jan</span><span>Mar</span><span>Mai</span><span>Juil</span><span>Sep</span><span>Nov</span></div>
-            </div>
-            <ul class="dash__feed">
-              <li><span class="ok">✓</span> Déclaration TVA déposée <time>aujourd'hui</time></li>
-              <li><span class="ok">✓</span> 23 pièces classées automatiquement <time>hier</time></li>
-              <li><span class="wait">●</span> Comptes annuels en préparation <time>en cours</time></li>
-            </ul>
+        <div class="hero__visual reveal">
+          <figure class="hero__photo">
+            <img src="assets/img/hero-conseiller.jpg" alt="Conseiller Ega Tax Consulting souriant dans les bureaux" width="1312" height="1600" fetchpriority="high">
+          </figure>
+          <div class="mini-dash" aria-label="Illustration du suivi en ligne">
+            <div class="mini-dash__top"><small>Chiffre d'affaires</small><span class="tag">Suivi en ligne</span></div>
+            <strong data-count="184250">0</strong><em class="up">+12,4 % sur l'année</em>
+            <svg viewBox="0 0 220 60" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5AAEEA" stop-opacity=".4"/><stop offset="1" stop-color="#5AAEEA" stop-opacity="0"/></linearGradient></defs>
+              <path class="area" d="M0,50 C25,46 40,34 60,36 C85,38 95,26 120,24 C145,22 155,30 175,18 C195,8 208,10 220,4 L220,60 L0,60Z" fill="url(#g1)"/>
+              <path class="line" d="M0,50 C25,46 40,34 60,36 C85,38 95,26 120,24 C145,22 155,30 175,18 C195,8 208,10 220,4" fill="none" stroke="#5AAEEA" stroke-width="2.5"/>
+            </svg>
           </div>
           <div class="float float--a"><span class="float__icon">€</span><div><small>Rémunération dirigeant</small><strong>Scénario optimisé</strong></div></div>
-          <div class="float float--b"><span class="float__icon float__icon--green">✓</span><div><small>Pièce reçue</small><strong>Facture_0412.pdf</strong></div></div>
+          <div class="float float--b"><span class="float__icon float__icon--green">✓</span><div><small>Déclaration TVA</small><strong>Déposée dans les délais</strong></div></div>
         </div>
       </div>
     </section>
@@ -156,7 +143,7 @@
           <!-- Comptabilité -->
           <div class="panel" role="tabpanel" id="p-compta" aria-labelledby="t-compta">
             <aside class="panel__intro">
-              <div class="panel__icon"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-6"/></svg></div>
+              <figure class="panel__img"><img src="assets/img/reunion-chiffres.jpg" alt="Réunion de travail autour de documents comptables" width="1600" height="1067" loading="lazy"><div class="panel__icon"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-6"/></svg></div></figure>
               <h3>Comptabilité</h3>
               <p>Une comptabilité rigoureuse, tenue à jour et lisible — qui devient un véritable outil de pilotage plutôt qu'une simple obligation légale.</p>
               <a href="#contact" class="link">Confier ma comptabilité →</a>
@@ -175,7 +162,7 @@
           <!-- Fiscalité -->
           <div class="panel" role="tabpanel" id="p-fisca" aria-labelledby="t-fisca" hidden>
             <aside class="panel__intro">
-              <div class="panel__icon"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 8.5a1.5 1.5 0 100-.01M16 16.5a1.5 1.5 0 100-.01"/></svg></div>
+              <figure class="panel__img"><img src="assets/img/reunion-analyse.jpg" alt="Conseillers analysant un dossier fiscal avec un client" width="1600" height="1067" loading="lazy"><div class="panel__icon"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 8.5a1.5 1.5 0 100-.01M16 16.5a1.5 1.5 0 100-.01"/></svg></div></figure>
               <h3>Fiscalité</h3>
               <p>Payer le juste impôt, ni plus ni moins. Nous anticipons, optimisons dans le cadre légal et vous défendons en cas de contrôle.</p>
               <a href="#contact" class="link">Faire le point sur ma fiscalité →</a>
@@ -195,7 +182,7 @@
           <!-- Création -->
           <div class="panel" role="tabpanel" id="p-crea" aria-labelledby="t-crea" hidden>
             <aside class="panel__intro">
-              <div class="panel__icon"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div>
+              <figure class="panel__img"><img src="assets/img/poignee-de-main.jpg" alt="Poignée de main avec un entrepreneur" width="1600" height="1067" loading="lazy"><div class="panel__icon"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div></figure>
               <h3>Création &amp; conseil d'entreprise</h3>
               <p>De l'idée au lancement, puis à chaque étape clé : nous structurons votre projet sur des bases juridiques et financières solides.</p>
               <a href="#contact" class="link">Lancer mon projet →</a>
@@ -219,11 +206,15 @@
     <!-- ============ MISSION / WHY ============ -->
     <section class="section section--ink" id="mission">
       <div class="container">
-        <header class="section__head reveal">
+        <div class="mission__intro">
+        <header class="section__head section__head--left reveal">
           <p class="kicker kicker--light">Notre mission</p>
           <h2>Des solutions adaptées à votre situation, <em>du démarrage à la croissance.</em></h2>
           <p class="section__sub">Un accompagnement clair, réactif et sur mesure, pensé pour les indépendants, sociétés et ASBL.</p>
+          <p class="section__sub">Chez Ega Tax Consulting, chaque client a un interlocuteur direct qui connaît son dossier, ses chiffres et ses projets.</p>
         </header>
+        <figure class="mission__photo reveal"><img src="assets/img/equipe-documents.jpg" alt="L'équipe Ega Tax Consulting échangeant avec un client" width="1600" height="1067" loading="lazy"></figure>
+        </div>
         <div class="bento">
           <article class="tile tile--wide reveal">
             <span class="tile__n">01</span>
@@ -302,6 +293,13 @@
           <li class="step reveal"><span class="step__n">3</span><h3>Mise en place</h3><p>Reprise du dossier, outils en ligne, transmission des pièces : nous nous occupons de tout.</p></li>
           <li class="step reveal"><span class="step__n">4</span><h3>Suivi &amp; conseil</h3><p>Suivi en temps réel, points réguliers et conseils proactifs pour vos décisions.</p></li>
         </ol>
+        <figure class="banner reveal">
+          <img src="assets/img/formation-presentation.jpg" alt="Conseiller présentant une analyse financière" width="1600" height="1067" loading="lazy">
+          <figcaption>
+            <p class="banner__quote">« Nous vous aidons à comprendre vos chiffres et à préparer vos décisions. »</p>
+            <a href="#contact" class="btn btn--accent">Planifier un premier échange <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
